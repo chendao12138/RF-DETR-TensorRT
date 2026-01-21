@@ -154,22 +154,22 @@ The typical provider priority is:
 > If TensorRT EP fails to load, it will fallback to CUDA or CPU.
 
 ## 8. Troubleshooting
-8.1 TensorRT INT64 warning
+### 8.1 TensorRT INT64 warning
 
 If you see warnings about INT64 weights, TensorRT will cast to INT32.
 You can re-export ONNX with proper dtypes or run simplification.
 
-8.2 cuDNN version mismatch
+### 8.2 cuDNN version mismatch
 
 Example:
 
-TensorRT was linked against cuDNN X but loaded cuDNN Y
+> TensorRT was linked against cuDNN X but loaded cuDNN Y
 
 Fix:
 
-Ensure the cuDNN DLL in PATH matches the version TensorRT expects.
+> Ensure the cuDNN DLL in PATH matches the version TensorRT expects.
 
-8.3 OpenCV parallel plugin missing
+### 8.3 OpenCV parallel plugin missing
 
 If you see missing opencv_core_parallel_*.dll messages:
 
@@ -177,12 +177,12 @@ Ensure OpenCV bin is in PATH
 
 Or use opencv_world static/monolithic build configuration consistently
 
-9. Acknowledgements
+## 9. Acknowledgements
 
-[RF-DETR](https://rfdetr.roboflow.com/)
+- [RF-DETR](https://rfdetr.roboflow.com/)
 
-[ONNX Runtime](https://onnxruntime.ai/docs/get-started)
+- [ONNX Runtime](https://onnxruntime.ai/docs/get-started)
 
-[NVIDIA TensorRT](https://developer.nvidia.com/tensorrt)
+- [NVIDIA TensorRT](https://developer.nvidia.com/tensorrt)
 
-[OpenCV](https://opencv.org/)
+- [OpenCV](https://opencv.org/)
